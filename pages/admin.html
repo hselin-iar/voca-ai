@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin — MoSPI Semantic NCO</title>
+<link rel="stylesheet" href="../css/style.css">
+</head><body>
+<header class="header"><div class="container nav">
+  <a class="brand" href="../index.html"><div class="brand-mark"></div><span>VocaAI</span></a>
+  <nav class="navlinks"><a href="problem.html">Problem</a><a href="solution.html">Solution</a><a href="features.html">Features</a><a href="demo.html">Demo</a><a href="./pages/">Admin</a><a href="dashboard.html">Dashboard</a><a href="api.html">API</a>
+  <!-- <div style="display:flex;gap:10px;align-items:center"><a class="nav-cta" href="demo.html">Database</a><button class="burger" data-burger>☰</button></div> -->
+<!-- </div>--></header>
+
+<section class="section"><div class="container">
+  <p class="eyebrow">Admin Console</p>
+  <h1>Update existing database, Access search history</h1>
+
+  <div class="admin-grid">
+    <div class="glass card reveal tilt">
+      <h3>Occupancy updates</h3>
+      <label style="font-size:.95rem;color:#c9d7e9">Upload NCO dataset (CSV/JSON)</label>
+      <div class="search-wrap" style="margin-top:8px"><input class="input" type="file"><a class="btn" href="#" onclick="return false">Import</a></div>
+      <p style="color:#9fb2c9;font-size:.85rem;margin-top:8px">Preserve 4- to 8-digit hierarchy.</p>
+    </div>
+    <div class="glass card reveal tilt">
+      <h3>Synonyms &amp; Languages</h3>
+      <ul class="bullets"><li><span class="dot"></span>Hindi + regional stubs</li><li><span class="dot"></span>CSV import/export</li><li><span class="dot"></span>Disambiguation rules</li></ul>
+      <div class="search-wrap"><input class="input" placeholder="Add Hindi term"><a class="btn" href="#" onclick="return false">Add</a></div>
+    </div>
+  </div>
+</section>
+ <!-- CTA -->
+  <section class="section" style="padding-top: 18px; padding-bottom: 48px;">
+    <div class="container">
+      <div style="text-align:center;padding:20px 36px 36px 36px;">
+        <h2 style="margin-bottom:6px">Looking for update history or statistics? </h2>
+        <p class="lead1" >Head to the dashboard to analyse past data trends and audit trails with effortless ease. </p>
+        <div class="hero-actions" style="justify-content:center">
+          <a class="btn primary" href="dashboard.html">Dashboard</a>
+          <a class="btn" href="demo.html">Database</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer"><div class="container" style="padding:28px 0"><div class="row cols-3"><div><h3 style="margin:0 0 8px">MoSPI Semantic NCO</h3></div><div><h4 style="margin:0 0 8px">Explore</h4><div style="display:grid;gap:6px"><a href="features.html">Features</a><a href="demo.html">Demo</a></div></div><div><h4 style="margin:0 0 8px">Build</h4><div style="display:grid;gap:6px"><a href="api.html">API</a><a href="dashboard.html">Dashboard</a></div></div></div><div style="margin-top:18px;color:#8ea7c5;font-size:.85rem">© <span id="year"></span> MoSPI (Demo UI)</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<script src="../js/script.js"></script>
+</body></html>

@@ -1,0 +1,65 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Database - MoSPI Semantic NCO</title>
+<link rel="stylesheet" href="../css/style.css">
+</head><body>
+<header class="header"><div class="container nav">
+  <a class="brand" href="../index.html"><div class="brand-mark"></div><span>VocaAI</span></a>
+  <nav class="navlinks"><a href="problem.html">Problem</a><a href="solution.html">Solution</a><a href="features.html">Features</a><a href="demo.html">Database</a><a href="admin.html">Admin</a><a href="dashboard.html">Dashboard</a><a href="api.html">API</a></nav>
+  <!-- <div style="display:flex;gap:10px;align-items:center"><a class="nav-cta" href="demo.html">Search Data</a><button class="burger" data-burger>☰</button></div> -->
+<!-- </div>--></header>
+
+<section class="section"><div class="container">
+  <p class="eyebrow">DATABASE SEARCH</p>
+  <h1>Semantic NCO 2015 Database Search : <span style="background:linear-gradient(90deg,var(--cyan),var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent">Fast retrieval system</span> </h1>
+  <br>
+  <br>
+  <div class="demo-glass-col" style="margin-top:18px; margin-bottom: 0;">
+    <div class="glass card reveal tilt demo-search-card">
+      <h3 style="margin-bottom: 55px;font-size: 2.2rem;">Search NCO-2015</h3>
+
+      <div class="search-wrap">
+        <input class="input" data-search placeholder="e.g., sewing machine operator, tailor, garment cutter">
+        <button class="icon-btn" title="Voice (mock)">🎙</button>
+        <button class="icon-btn" title="Language (mock)">🌐</button>
+        <a class="btn" href="#" onclick="return false">Search</a>
+      </div>
+      <div class="spacer"></div>
+      <div data-results>
+        <p style="color:#9fb2c9">Top results will appear here. Try typing <span style="color:#e6eef7">“sewing”</span>.</p>
+      </div>
+    </div>
+    <div class="glass card reveal tilt demo-synonym-card">
+      <h3 style="font-size: 2.2rem;">Synonym Bank</h3>
+      <p style="color:#cbd7e7">Map synonyms &amp; variants:</p>
+      <div class="tags">
+        <span class="tag">tailor</span><span class="tag">stitching operator</span><span class="tag">seamster</span><span class="tag">sewing op.</span><span class="tag">garment worker</span>
+      </div>
+      <div class="search-wrap" style="margin-top:10px">
+        <input class="input" placeholder="Add synonym (UI only)">
+        <button class="btn">Add</button>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+ <!-- CTA -->
+  <section class="section" style="padding-top: 18px; padding-bottom: 48px;">
+    <div class="container">
+      <div style="text-align:center;padding:20px 36px 36px 36px;">
+        <h2 style="margin-bottom:6px">Can't find a record? </h2>
+        <p class="lead1" >Head to the admin panel to register a new record or update existing records with effortless ease. </p>
+        <div class="hero-actions" style="justify-content:center">
+          <a class="btn primary" href="admin.html">Admin Panel</a>
+          <a class="btn" href="dashboard.html">Audit trail</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer"><div class="container" style="padding:28px 0">
+  <div class="row cols-3"><div><h3 style="margin:0 0 8px">MoSPI Semantic NCO</h3></div><div><h4 style="margin:0 0 8px">Explore</h4><div style="display:grid;gap:6px"><a href="features.html">Features</a></div></div><div><h4 style="margin:0 0 8px">Build</h4><div style="display:grid;gap:6px"><a href="api.html">API</a><a href="admin.html">Admin</a></div></div></div>
+  <div style="margin-top:18px;color:#8ea7c5;font-size:.85rem">© <span id="year"></span> MoSPI</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<script src="../js/script.js"></script>
+</body></html>

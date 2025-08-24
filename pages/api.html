@@ -1,0 +1,33 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>API — MoSPI Semantic NCO</title>
+<link rel="stylesheet" href="../css/style.css">
+</head><body>
+<header class="header"><div class="container nav">
+  <a class="brand" href="../index.html"><div class="brand-mark"></div><span>VocaAI</span></a>
+  <nav class="navlinks"><a href="problem.html">Problem</a><a href="solution.html">Solution</a><a href="features.html">Features</a><a href="demo.html">Demo</a><a href="admin.html">Admin</a><a href="dashboard.html">Dashboard</a><a href="api.html">API</a></nav>
+  <!-- <div style="display:flex;gap:10px;align-items:center"><a class="nav-cta" href="demo.html">Database</a><button class="burger" data-burger>☰</button></div> -->
+</div> <!--<div class="container mobile" data-mobile><a href="problem.html">Problem</a><a href="solution.html">Solution</a><a href="features.html">Features</a><a href="demo.html">Demo</a><a href="admin.html">Admin</a><a href="dashboard.html">Dashboard</a><a href="api.html">API</a><a href="about.html">About</a></div>--></header>
+
+<section class="section"><div class="container">
+  <p class="eyebrow">API & Integration</p>
+  <h1>Integrate with MoSPI survey apps and portals</h1>
+
+  <div class="glass card reveal">
+    <h3>POST /api/v1/search</h3>
+    <pre class="glass" style="padding:14px;overflow:auto;border-radius:16px"><code>POST /api/v1/search
+{
+  "q": "sewing machine operator",
+  "top_k": 5,
+  "lang": "hi"
+}</code></pre>
+    <p style="color:#cbd7e7">Returns ranked matches with confidence scores and hierarchy path.</p>
+  </div>
+
+  <div class="row cols-2" style="margin-top:18px">
+    <div class="glass card reveal tilt"><h3>Auth</h3><ul class="bullets"><li><span class="dot"></span>MoSPI SSO / OAuth2</li><li><span class="dot"></span>Service tokens</li><li><span class="dot"></span>Role-based access</li></ul></div>
+    <div class="glass card reveal tilt"><h3>Web Components</h3><ul class="bullets"><li><span class="dot"></span>Drop-in &lt;nco-search/&gt; widget</li><li><span class="dot"></span>Dark/light aware</li><li><span class="dot"></span>Accessible</li></ul></div>
+  </div>
+</div></section>
+
+<footer class="footer"><div class="container" style="padding:28px 0"><div class="row cols-3"><div><h3 style="margin:0 0 8px">MoSPI Semantic NCO</h3</div><div></div><h4 style="margin:0 0 8px">Explore</h4><div style="display:grid;gap:6px"><a href="../features.html">Features</a></div></div><div><h4 style="margin:0 0 8px">Build</h4><div style="display:grid;gap:6px"><a href="dashboard.html">Dashboard</a></div></div></div><div style="margin-top:18px;color:#8ea7c5;font-size:.85rem">© <span id="year"></span> MoSPI

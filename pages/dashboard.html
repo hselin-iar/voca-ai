@@ -1,0 +1,62 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard — MoSPI Semantic NCO</title>
+<link rel="stylesheet" href="../css/style.css">
+</head><body>
+<header class="header"><div class="container nav">
+  <a class="brand" href="../index.html"><div class="brand-mark"></div><span>VocaAI</span></a>
+  <nav class="navlinks"><a href="problem.html">Problem</a><a href="solution.html">Solution</a><a href="features.html">Features</a><a href="demo.html">Demo</a><a href="admin.html">Admin</a><a href="dashboard.html">Dashboard</a><a href="api.html">API</a></nav>
+  <!-- <div style="display:flex;gap:10px;align-items:center"><a class="nav-cta" href="demo.html">Database</a><button class="burger" data-burger>☰</button></div> -->
+<!-- </div>--></header> 
+
+<section class="section"><div class="container">
+  <p class="eyebrow">Dashboards & KPIs</p>
+  <h1>Track usage, accuracy, latency, search history and audit trails</h1>
+  <div class="row cols-3" style="margin-top:18px">
+    <div class="glass card reveal tilt"><div class="stat">92.4% <span style="font-weight:600;color:#cfeaff;margin-left:8px">Accuracy (Top-1)</span></div><div style="color:#9fb2c9;font-size:.85rem;margin-top:6px">↑ 1.1%</div></div>
+    <div class="glass card reveal tilt"><div class="stat">118 ms <span style="font-weight:600;color:#cfeaff;margin-left:8px">Median Latency</span></div><div style="color:#9fb2c9;font-size:.85rem;margin-top:6px">↓ 8 ms</div></div>
+    <div class="glass card reveal tilt"><div class="stat">99.1% <span style="font-weight:600;color:#cfeaff;margin-left:8px">Coverage</span></div><div style="color:#9fb2c9;font-size:.85rem;margin-top:6px">→</div></div>
+  </div>
+
+  <div class="row cols-2" style="margin-top:18px">
+    <div class="glass card reveal">
+      <h3>Queries per Day</h3>
+      <div class="bar-grid" data-bargrid>
+        <!-- 12 bars -->
+        <div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div>
+        <div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div>
+        <div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div>
+      </div>
+    </div>
+    <div class="glass card reveal">
+      <h3>Confidence Distribution</h3>
+      <div class="bar-grid" data-bargrid>
+        <div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div>
+        <div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div>
+        <div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div><div class="bar-col"></div>
+      </div>
+    </div>
+  </div>
+</div></section>
+  <div class="section dark">
+  <div class="glass card reveal tilt">
+      <h3>Audit Trails</h3>
+      <table class="table">
+        <thead><tr><th>Action</th><th>Detail</th><th></th></tr></thead>
+        <tbody>
+          <tr><td>Manual override</td><td>User A → Code 81530110 for “sewing operator”</td><td><a class="btn" href="#" onclick="return false">Review</a></td></tr>
+          <tr><td>Synonym add</td><td>“seamster” → Tailor</td><td><a class="btn" href="#" onclick="return false">Review</a></td></tr>
+          <tr><td>Lang term</td><td>Hindi: “सिलाई मशीन ऑपरेटर”</td><td><a class="btn" href="#" onclick="return false">Review</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+
+<footer class="footer"><div class="container" style="padding:28px 0"><div class="row cols-3"><div><h3 style="margin:0 0 8px">MoSPI Semantic NCO</h3></div><div><h4 style="margin:0 0 8px">Explore</h4><div style="display:grid;gap:6px"><a href="features.html">Features</a><a href="demo.html">Demo</a></div></div><div><h4 style="margin:0 0 8px">Build</h4><div style="display:grid;gap:6px"><a href="api.html">API</a></div></div></div><div style="margin-top:18px;color:#8ea7c5;font-size:.85rem">© <span id="year"></span> MoSPI (Demo UI)</div></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<script src="../js/script.js"></script>
+</body></html>
